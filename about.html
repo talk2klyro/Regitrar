@@ -1,83 +1,166 @@
-<!DOCTYP<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Mallam Usman Alhaji Saleh</title>
   <meta name="description" content="Learn more about Mallam Usman Alhaji Saleh — Registrar of Al-Ma’arif College and Vice-Chair of its Governance Board." />
   <meta property="og:title" content="About — Mallam Usman Alhaji Saleh" />
   <meta property="og:description" content="Professional biography, education background, and core values of Mallam Usman Alhaji Saleh." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://yourwebsite.com/about.html" />
   <meta property="og:image" content="portrait.jpg" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>About — Mallam Usman Alhaji Saleh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #004e92, #000428);
+      color: white;
+      padding: 1.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .about-grid img {
+      flex: 1 1 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 100%;
+    }
+    .about-text {
+      flex: 1 1 400px;
+    }
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #004e92;
+    }
+    .education ul {
+      list-style: disc inside;
+      padding: 0;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .value-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #000428;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-lg font-bold">Mallam Usman Alhaji Saleh</h1>
-      <nav>
-        <ul class="flex space-x-4 text-sm">
-          <li><a href="home.html" class="hover:text-blue-600">Home</a></li>
-          <li><a href="about.html" class="hover:text-blue-600">About</a></li>
-          <li><a href="experience.html" class="hover:text-blue-600">Experience</a></li>
-          <li><a href="credentials.html" class="hover:text-blue-600">Credentials</a></li>
-          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+
+<header>
+  <h1>Mallam Usman Alhaji Saleh</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="credentials.html">Credentials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="about-grid">
+    <img src="portrait.jpg" alt="Mallam Usman Alhaji Saleh">
+    <div class="about-text">
+      <h2>Professional Biography</h2>
+      <p>Mallam Usman Alhaji Saleh serves as Registrar of Al-Ma’arif College and Vice-Chair of its Governance Board. With professional designations including MIPAM (Member, Institute of Public Administration of Nigeria) and FCPA (Fellow, Chartered Institute of Public Administration), he combines administrative expertise with a vision for sustainable academic growth.</p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section class="bg-blue-50 py-12">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-      <img src="portrait.jpg" alt="Mallam Usman Alhaji Saleh" class="rounded-lg shadow-lg w-full h-auto" />
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Professional Biography</h2>
-        <p class="mb-4">Mallam Usman Alhaji Saleh serves as Registrar of Al-Ma’arif College and Vice-Chair of its Governance Board. With professional designations including MIPAM (Member, Institute of Public Administration of Nigeria) and FCPA (Fellow, Chartered Institute of Public Administration), he combines administrative expertise with a vision for sustainable academic growth.</p>
-      </div>
+<section class="section education">
+  <h2>Educational Background</h2>
+  <ul>
+    <li>Bachelor’s Degree in [Your Field Here] — [Institution Name]</li>
+    <li>Diploma in [Your Field Here] — [Institution Name]</li>
+    <li>Professional certifications: MIPAM, FCPA</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Core Values & Vision</h2>
+  <div class="values">
+    <div class="value-card">
+      <h4>Integrity in Governance</h4>
+      <p>Upholding ethical and transparent decision-making processes.</p>
     </div>
-  </section>
-
-  <!-- Education Background -->
-  <section class="max-w-6xl mx-auto py-12">
-    <h3 class="text-2xl font-bold mb-4 text-center">Educational Background</h3>
-    <ul class="list-disc list-inside space-y-2 text-lg">
-      <li>Bachelor’s Degree in [Your Field Here] — [Institution Name]</li>
-      <li>Diploma in [Your Field Here] — [Institution Name]</li>
-      <li>Professional certifications: MIPAM, FCPA</li>
-    </ul>
-  </section>
-
-  <!-- Core Values & Vision -->
-  <section class="bg-white py-12">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-2xl font-bold mb-4 text-center">Core Values & Vision</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <h4 class="font-semibold mb-2">Integrity in Governance</h4>
-          <p>Upholding ethical and transparent decision-making processes.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-2">Efficiency in Administration</h4>
-          <p>Streamlining institutional processes for optimal performance.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-2">Commitment to Compliance</h4>
-          <p>Ensuring all operations meet regulatory and accreditation standards.</p>
-        </div>
-      </div>
+    <div class="value-card">
+      <h4>Efficiency in Administration</h4>
+      <p>Streamlining institutional processes for optimal performance.</p>
     </div>
-  </section>
+    <div class="value-card">
+      <h4>Commitment to Compliance</h4>
+      <p>Ensuring all operations meet regulatory and accreditation standards.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
-    <p>&copy; <span id="year"></span> Mallam Usman Alhaji Saleh. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; <span id="year"></span> Mallam Usman Alhaji Saleh. All Rights Reserved.</p>
+</footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- Vercel Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
-</html>
+  </html>
