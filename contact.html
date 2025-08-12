@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,64 +11,75 @@
   <meta property="og:url" content="http://yourwebsite.com/contact.html" />
   <meta property="og:image" content="portrait.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white shadow-md sticky top-0 z-50 fade-in">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-lg font-bold">Mallam Usman Alhaji Saleh</h1>
+      <h1 class="text-lg font-bold tracking-wide">Mallam Usman Alhaji Saleh</h1>
       <nav>
-        <ul class="flex space-x-4 text-sm">
-          <li><a href="home.html" class="hover:text-blue-600">Home</a></li>
+        <ul class="flex space-x-4 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
           <li><a href="about.html" class="hover:text-blue-600">About</a></li>
           <li><a href="experience.html" class="hover:text-blue-600">Experience</a></li>
           <li><a href="credentials.html" class="hover:text-blue-600">Credentials</a></li>
-          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+          <li><a href="contact.html" class="text-blue-600 font-semibold">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Contact Intro -->
-  <section class="bg-blue-50 py-12">
+  <section class="bg-blue-50 py-12 fade-in">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <p class="max-w-3xl mx-auto">Reach out for professional inquiries, official communications, or governance-related matters.</p>
+      <h2 class="text-4xl font-extrabold mb-4">Get in Touch</h2>
+      <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">Reach out for professional inquiries, official communications, or governance-related matters. We value your engagement and will respond promptly.</p>
     </div>
   </section>
 
-  <!-- Contact Details -->
-  <section class="max-w-6xl mx-auto py-12 grid md:grid-cols-2 gap-8">
-    <div class="bg-white p-6 shadow rounded">
+  <!-- Contact Details & Form -->
+  <section class="max-w-6xl mx-auto py-12 grid md:grid-cols-2 gap-8 fade-in">
+    <!-- Contact Details -->
+    <div class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
       <h3 class="text-xl font-semibold mb-4">Contact Details</h3>
-      <p><strong>Email:</strong> registrar@almaarifcollege.edu.ng</p>
-      <p><strong>Phone:</strong> +234 (0)xxx xxx xxxx</p>
+      <p class="mb-2"><strong>Email:</strong> <a href="mailto:registrar@almaarifcollege.edu.ng" class="text-blue-600 hover:underline">registrar@almaarifcollege.edu.ng</a></p>
+      <p class="mb-2"><strong>Phone:</strong> +234 (0)xxx xxx xxxx</p>
       <p><strong>Office Address:</strong> [College Address]</p>
     </div>
 
     <!-- Contact Form -->
-    <div class="bg-white p-6 shadow rounded">
+    <div class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
       <h3 class="text-xl font-semibold mb-4">Send a Message</h3>
       <form id="contactForm" class="space-y-4">
         <div>
           <label for="name" class="block text-sm font-medium">Name</label>
-          <input type="text" id="name" name="name" class="w-full p-2 border rounded" required />
+          <input type="text" id="name" name="name" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" required />
         </div>
         <div>
           <label for="email" class="block text-sm font-medium">Email</label>
-          <input type="email" id="email" name="email" class="w-full p-2 border rounded" required />
+          <input type="email" id="email" name="email" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" required />
         </div>
         <div>
           <label for="message" class="block text-sm font-medium">Message</label>
-          <textarea id="message" name="message" class="w-full p-2 border rounded" rows="4" required></textarea>
+          <textarea id="message" name="message" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-500" rows="4" required></textarea>
         </div>
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send</button>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">Send</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
+  <footer class="bg-gray-800 text-white text-center py-4 fade-in">
     <p>&copy; <span id="year"></span> Mallam Usman Alhaji Saleh. All rights reserved.</p>
   </footer>
 
