@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Progress Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroSkills Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>My Growth Dashboard</h1>
-    <div class="time-toggle">
-      <button data-range="daily">Daily</button>
-      <button data-range="weekly">Weekly</button>
-      <button data-range="monthly">Monthly</button>
+    <h1>MicroSkills Dashboard</h1>
+    <div>
+      <button class="active">Overview</button>
+      <button>Analytics</button>
+      <button>Settings</button>
     </div>
   </header>
 
   <aside>
-    <ul id="skills-list"></ul>
+    <nav>
+      <ul>
+        <li><button>Skills</button></li>
+        <li><button>Timeline</button></li>
+        <li><button>Reflections</button></li>
+        <li><button>Achievements</button></li>
+      </ul>
+    </nav>
   </aside>
 
   <main>
-    <!-- 👇 Inserted Input Section -->
     <section id="input-section">
-      <h2>Update Progress</h2>
-      <select id="skill-select"></select>
-      <input type="number" id="progress-value" placeholder="Enter new value">
-      <button id="add-progress">Add Progress</button>
+      <h2>Add New Skill</h2>
+      <input type="text" placeholder="Skill name" />
+      <select>
+        <option value="">Category</option>
+        <option value="Creative">Creative</option>
+        <option value="Technical">Technical</option>
+        <option value="Analytical">Analytical</option>
+      </select>
+      <input type="number" placeholder="Progress %" />
+      <button>Add Skill</button>
     </section>
 
-    <section id="charts"></section>
-    <section id="summary-cards"></section>
-    <section id="burnout-gauge"></section>
+    <section id="skills-grid">
+      <!-- Skill cards will be injected here -->
+    </section>
   </main>
 
   <script src="script.js"></script>
