@@ -1,165 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mallam Usman Alhaji Saleh — Registrar & Governance Board Vice-Chair. Committed to Excellence in Academic Governance and Institutional Integrity.">
-  <meta name="keywords" content="Usman Alhaji Saleh, Registrar, Governance, Academic Administration, MIPAM, FCPA, Al-Ma'arif College">
-  <meta name="author" content="Mallam Usman Alhaji Saleh">
-  <title>Mallam Usman Alhaji Saleh | Registrar & Vice-Chair</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #004e92, #000428);
-      color: white;
-      padding: 1.5rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      margin: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      background: linear-gradient(to right, rgba(0, 78, 146, 0.9), rgba(0, 4, 40, 0.9)), url('portrait.jpg') center/cover no-repeat;
-      color: white;
-      min-height: 80vh;
-      text-align: center;
-    }
-    .hero-content {
-      max-width: 600px;
-      animation: fadeInUp 1s ease forwards;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .cta-buttons a {
-      display: inline-block;
-      background: #ffd700;
-      color: #000;
-      padding: 0.8rem 1.5rem;
-      border-radius: 5px;
-      margin: 0 0.5rem;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .cta-buttons a:hover {
-      background: #ffcd00;
-    }
-    .highlights {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 2rem;
-      background-color: white;
-    }
-    .highlight {
-      flex: 1 1 250px;
-      background: #f1f1f1;
-      padding: 2rem;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .highlight:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      background: #000428;
-      color: white;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    @keyframes fadeInUp {
-      from {
-        transform: translateY(20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Progress Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h1>Mallam Usman Alhaji Saleh</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="credentials.html">Credentials</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h2>Registrar & Governance Board Vice-Chair</h2>
-    <p>Committed to Excellence in Academic Governance and Institutional Integrity.</p>
-    <div class="cta-buttons">
-      <a href="about.html">View Biography</a>
-      <a href="contact.html">Contact Office</a>
+  <header>
+    <h1>My Growth Dashboard</h1>
+    <div class="time-toggle">
+      <button data-range="daily">Daily</button>
+      <button data-range="weekly">Weekly</button>
+      <button data-range="monthly">Monthly</button>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="highlights">
-  <div class="highlight">
-    <h3>10+ Years in Academic Administration</h3>
-  </div>
-  <div class="highlight">
-    <h3>MIPAM & FCPA Certified</h3>
-  </div>
-  <div class="highlight">
-    <h3>Governance Board Vice-Chair</h3>
-  </div>
-</section>
+  <aside>
+    <ul id="skills-list"></ul>
+  </aside>
 
-<footer>
-  <p>&copy; <span id="year"></span> Mallam Usman Alhaji Saleh. All Rights Reserved.</p>
-</footer>
+  <main>
+    <section id="charts"></section>
+    <section id="summary-cards"></section>
+    <section id="burnout-gauge"></section>
+  </main>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<!-- Vercel Analytics -->
-<script defer src="/_vercel/insights/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
