@@ -1,0 +1,45 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #333;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  grid-column: span 2;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside {
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 1rem;
+}
+
+main {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+button {
+  background: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.active {
+  background: #3b82f6;
+  color: white;
+}
